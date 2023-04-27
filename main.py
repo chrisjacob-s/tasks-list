@@ -1,8 +1,9 @@
 # Christopher Soriano and Justin Donate
 # 4/25/23
-#
+# This program allows the user to keep track of their tasks that need to be done.
 
 import check_input
+from tasklist import Tasklist
 
 def main_menu():
   '''Displays the main menu and returns the user’s valid input'''
@@ -32,7 +33,10 @@ def get_time():
   return f"{hour:02d}:{minute:02d}"
 
 def main():
-  
+  task_list = Tasklist()
   print("-Tasklist-")
+  print(f"Tasks to complete: {len(task_list)}")
+
+  
 
 main()

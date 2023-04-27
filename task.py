@@ -1,7 +1,4 @@
-# Chris
-import abc
-
-class Task(abc.ABC):
+class Task:
   '''Represents a task that needs to be done on a specific day and time
   Attributes: 
     description (str): description of task
