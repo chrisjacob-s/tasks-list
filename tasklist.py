@@ -28,9 +28,9 @@ class Tasklist:
     
   def postpone_task(self, date, time): 
     ''' remove the first task from the tasklist. Use its description, the new date, and the new time to construct a new task. Add that task to the tasklist. Sort the list. '''
-    desc = self._tasklist[0].desc
-    new_task = Task(desc, date, time)
+    desc = self._tasklist[0].description
     self._tasklist.pop(0)
+    new_task = Task(desc, date, time)
     self._tasklist.append(new_task)
     self._tasklist.sort()
     
